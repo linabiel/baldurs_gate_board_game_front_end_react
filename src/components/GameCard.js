@@ -1,6 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import CardListItem from './CardListItem';
-
+import React from 'react';
 
 function GameCard({omenCardShuffle}) {
 
@@ -13,7 +11,7 @@ function GameCard({omenCardShuffle}) {
     return (
 
         <>
-        <div className="portrait-box">
+        <div className="text-box">
             <p className="text"> {omenCardItems.name} </p>
             <p className="text"> {omenCardItems.flavourText} </p>
             <p className="text"> {omenCardItems.might} </p>

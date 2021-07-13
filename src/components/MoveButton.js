@@ -1,14 +1,14 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 function MoveButton({clickLeftButton, clickRightButton, clickDownButton, clickUpButton}) {
 
 
     return (
         <>
-            <button onClick={clickLeftButton} className="button">Left</button>
-            <button onClick={clickRightButton} className="button" >Right</button>
-            <button onClick={clickUpButton} className="button">Up</button>
-            <button onClick={clickDownButton} className="button">Down</button>
+            <button onClick={clickLeftButton} className="btn-grad">Left</button>
+            <button onClick={clickRightButton} className="btn-grad" >Right</button>
+            <button onClick={clickUpButton} className="btn-grad">Up</button>
+            <button onClick={clickDownButton} className="btn-grad">Down</button>
         </>
     )
 

@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import GameBox from './containers/GameBox';
-import {useEffect, useState} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {

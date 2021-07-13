@@ -96,8 +96,6 @@ function GameBox() {
         <>
             <main id="main">
 
-
-
                 <div id="tile-display">
                     <img src ={Logo} alt="image of Betrayal at Baldurs Gate"></img>
                 </div>

@@ -53,3 +53,5 @@ out/
 target/
 .idea_modules/
 /db/babg_db.trace.db
+
+/node_modules

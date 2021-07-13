@@ -4,8 +4,6 @@ import CharacterCard from '../components/CharacterCard';
 import MoveButton from '../components/MoveButton';
 import TextBox from '../components/TextBox';
 import DiceRoll from '../components/DiceRoll';
-import CharacterStats from '../components/CharacterStats';
-import TileDisplayPic from "../components/TileDisplayPic";
 import GameCard from "../components/GameCard";
 import Board from "../components/images/Board_removebg.png";
 import Logo from "../components/images/logo.png";
@@ -30,34 +28,34 @@ function GameBox() {
     }, [])
 
     const fetchStartGame = function () {
-        fetch("http://localhost:8080/api/start")
+        fetch("https://betrayal-at-baldurs-gate.herokuapp.com//api/start")
             .then(response => response.text())
             .then(startGame => setStartGame(startGame))
     }
 
     const fetchShuffledOmenCard = function () {
-        fetch("http://localhost:8080/api/cards")
+        fetch("https://betrayal-at-baldurs-gate.herokuapp.com//api/cards")
             .then(response => response.json())
             .then(omenCardShuffle => setOmenCardShuffle(omenCardShuffle))
     }
 
     const moveCharacterLeft = function () {
-        fetch("http://localhost:8080/api/move/1")
+        fetch("https://betrayal-at-baldurs-gate.herokuapp.com//api/move/1")
             .then(response => response.text())
             .then(characterPosition => setCharacterPosition(characterPosition))
     }
     const moveCharacterRight = function () {
-        fetch("http://localhost:8080/api/move/2")
+        fetch("https://betrayal-at-baldurs-gate.herokuapp.com//api/move/2")
             .then(response => response.text())
             .then(characterPosition => setCharacterPosition(characterPosition))
     }
     const moveCharacterUp = function () {
-        fetch("http://localhost:8080/api/move/3")
+        fetch("https://betrayal-at-baldurs-gate.herokuapp.com//api/move/3")
             .then(response => response.text())
             .then(characterPosition => setCharacterPosition(characterPosition))
     }
     const moveCharacterDown = function () {
-        fetch("http://localhost:8080/api/move/4")
+        fetch("https://betrayal-at-baldurs-gate.herokuapp.com//api/move/4")
             .then(response => response.text())
             .then(characterPosition => setCharacterPosition(characterPosition))
     }
@@ -83,13 +81,13 @@ function GameBox() {
     }
 
     const fetchHeroesApi = function () {
-        fetch("http://localhost:8080/api/heroes")
+        fetch("https://betrayal-at-baldurs-gate.herokuapp.com//api/heroes")
             .then(response => response.json())
             .then(heroes => setHeroes(heroes))
     }
 
     const fetchScroll = function () {
-        fetch("http://localhost:8080/api/scroll")
+        fetch("https://betrayal-at-baldurs-gate.herokuapp.com//api/scroll")
             .then(response => response.text())
             .then(data => setScroll(data))
     }

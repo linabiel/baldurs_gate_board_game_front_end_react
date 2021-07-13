@@ -114,7 +114,7 @@ function GameBox() {
                     <DiceRoll id="dice-roll" />
                 </div>
 
-                <div>
+                <div id="map-layer">
                     <img src={Board} class = "map"></img>
                 </div>
 

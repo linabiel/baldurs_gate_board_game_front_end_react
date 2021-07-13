@@ -18,7 +18,7 @@
   padding: 0px;
 }
 
-#bottom-layer{
+#bottom-layer {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -55,11 +55,16 @@
     border-radius: 6px;
 }
 
-.map  {
-  height:1000px;
-  width: 1800px;
-  padding-left: 40px;
-  padding-top: 40px
+.map {
+  height: 100%;
+  width: 100%;
+  padding-top: 40px;
+}
+
+#map-layer {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
 }
 

@@ -97,7 +97,7 @@ function GameBox() {
             <main id="main">
 
                 <div id="tile-display">
-                    <img src ={Logo} alt="image of Betrayal at Baldurs Gate"></img>
+                    <img src ={Logo} alt="logo"></img>
                 </div>
 
                 <div id="middle-layer">
@@ -113,7 +113,7 @@ function GameBox() {
                 </div>
 
                 <div id="map-layer">
-                    <img src={Board} class = "map"></img>
+                    <img src={Board} alt='board' className="map"></img>
                 </div>
 
             </main>

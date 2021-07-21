@@ -3,7 +3,7 @@ import React from 'react';
 
 const CharacterCard = ({heroes}) => {
 
-    if(heroes.length == 0){
+    if(heroes.length === 0){
         return "loading cards";
     }
   

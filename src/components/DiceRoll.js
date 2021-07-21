@@ -1,14 +1,12 @@
 import React from 'react'
 
-function DiceRoll({}) {
+function DiceRoll() {
 
     return (
         <>
             <button className="btn-grad-light">Dice Roll</button>
         </>
-
     )
-
 
 }
 
